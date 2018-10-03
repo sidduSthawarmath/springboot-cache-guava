@@ -27,7 +27,25 @@ Note to remember :
 	ii. Or We can declare the below properties in property file
 	    	spring.cache.cache-names=ticketsCache
 			spring.cache.guava.spec=maximumSize=500,expireAfterAccess=600s
-			spring.cache.type=guava	
+			spring.cache.type=guava
+			
+			
+5. Dependencies needed
+ 		
+ 		<!-- Spring boot cache dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
+		</dependency>
+ 
 	  
 	  
 	  
