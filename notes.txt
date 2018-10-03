@@ -25,8 +25,9 @@ Note to remember :
 				return new ConcurrentMapCacheManager("ticketsCache");
 			}
 	ii. Or We can declare the below properties in property file
-	    	
-	
+	    	spring.cache.cache-names=ticketsCache
+			spring.cache.guava.spec=maximumSize=500,expireAfterAccess=600s
+			spring.cache.type=guava	
 	  
 	  
 	  
